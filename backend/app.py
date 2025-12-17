@@ -3,13 +3,11 @@ from flask_cors import CORS
 import joblib
 import numpy as np
 
-# 1️⃣ Flask app'i OLUŞTUR
+
 app = Flask(__name__)
 
-# 2️⃣ CORS'u app'ten SONRA bağla
 CORS(app)
 
-# 3️⃣ Model & vectorizer yükle
 model = joblib.load("fake_news_binary_logreg.pkl")
 vectorizer = joblib.load("tfidf_vectorizer.pkl")
 
@@ -33,4 +31,4 @@ def predict():
     })
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
