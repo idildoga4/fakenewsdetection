@@ -15,9 +15,10 @@ showing whether the news is REAL or FAKE with a confidence score.
 
 ## Mobile App Preview
 
-
-
----
+<p align="center">
+  <img src="https://github.com/idildoga4/fakenewsdetection/blob/main/true.png?raw=true" width="45%" />
+  <img src="https://github.com/idildoga4/fakenewsdetection/blob/main/false.png?raw=true" width="45%" />
+</p>
 
 ## Model & Backend (Flask API)
 
